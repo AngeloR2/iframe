@@ -1,24 +1,163 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+                            <!-- This is the background -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #EDE6D9;
+      margin: 0;
+      padding: 40px;
+    }
 
+    .section-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      text-align: center;
+    }
 
-                               <! This is the background >
-<style>
-body {background-color: #EDE6D9;}
-</style>
+    .card {
+      border: 3px solid #342519;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
+    .card h2 {
+      margin-top: 0;
+      color: #342519;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #342519;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 2px 30px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #342519;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-container img {
+      margin-left: 15px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
+
+    .speech-box {
+      border: 2px solid #7b4f2c;
+      background-color: #fffdf9;
+      padding: 20px 30px;
+      max-width: 600px;
+      margin: 40px auto 0;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      color: #342519;
+    }
+  </style>
 </head>
 
 <body>
-<br><br><br>
 
-<img src="shop.jpg"
-style="float: right; width: 400px; margin-right: 1200px; margin-top: 20px;"> 
+  <br><br><br>
 
-<p style="font-size:50px;float: left; width: 300px; margin-left: 1200px; margin-top: -350px;"><strong>
-Our Roots 
-<strong></p>
+  <!-- Wrapper for image + heading -->
+  <div style="display: flex; justify-content: center; gap: 100px; margin-bottom: 60px;">
+    <img src="shop.jpg" style="width: 400px; height: auto; border-radius: 8px;">
 
+    <div>
+      <h2 style="font-size: 40px; color: #342519; margin: 0; padding-top: 10px;"><strong>Our Roots</strong></h2>
+
+      <p style="font-size: 18px; color: #444; max-width: 300px; margin-top: 20px;">
+        XL’s Cafe started off as just a small idea over late-night coffee chats. XL, the owner, always loved the aroma
+        of freshly brewed beans, it reminded him of home when his mother used to brew him a hot cup of coffee for rainy
+        and cozy days. He didn’t really plan to open a café at first... it just kind of happened. A few burnt batches
+        and messy counters later, XL found the perfect blend both in coffee and in community. What began as a quiet
+        dream turned into a place where people now laugh, work, and sip life one cup at a time
+      </p>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>To create a warm and welcoming environment where relations are made through coffee.</p>
+    </div>
+
+    <div class="card">
+      <h2>Our Values</h2>
+      <p>We highly value customers and promise to give our very best to serve all drinks with quality and love.</p>
+    </div>
+
+    <div class="card">
+      <h2>Our Staff</h2>
+      <p>From expert baristas to friendly servers, our team ensures only the best experience for our diners whether it
+        be a cup of coffee or a casual group meet up.</p>
+    </div>
+  </div>
+  <br><br><br>
+  <!-- 🧾 Speech Box 1 -->
+  <div class="speech-box">
+    <p>
+      <strong>About Our Coffee</strong><br> 
+          Our store features various unique and classic coffee specialised to match the consumers taste without fail. Nevertheless, there is a particular coffee bean that we specialise in which is '<a href="https://en.wikipedia.org/wiki/Kopi_luwak">Kopi luwak</a>'
+    </p>
+  </div>
+  <br><br><br>
+  <!-- 🧾 Speech Box 2 -->
+  <div class="speech-box" style="margin-top: 20px;">
+    <p>
+      From early mornings to late nights, we're here for you.<br>
+      Whether you're after your first espresso or your last chat of the day,<br>
+      XL's Café is where comfort meets caffeine.
+    </p>
+  </div>
+  <br><br>
+  <div class="speech-box" style="margin-top: 40px;">
+    <p>
+      From early mornings to late nights, we're here for you.<br>
+      Whether you're after your first espresso or your last chat of the day,<br>
+      XL's Café is where comfort meets caffeine.
+    </p>
+  </div>
 </body>
+
 </html>
